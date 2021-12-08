@@ -51,11 +51,7 @@ class numerical_treatment:
         else:
             return False
 
-    def median_imputation(self,column):
-        self.dataframe[column] = self.dataframe[column].fillna(self.dataframe[column].median())
-        return self.dataframe
-
-    def mean_imputation(self,column):
+  
         self.dataframe[column] = self.dataframe[column].fillna(self.dataframe[column].mean())
         return self.dataframe
 
