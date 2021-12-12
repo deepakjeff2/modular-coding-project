@@ -128,14 +128,14 @@ class categorical_imputation(numerical_treatment):
 
 
 if __name__=='__main__':
-    #df = pd.read_csv(input("Enter only name of the dataset if it is in the same directory else enter the name with directory:"))
-    #print('Loading...')
+    df = pd.read_csv(input("Enter only name of the dataset if it is in the same directory else enter the name with directory:"))
+    print('Loading...')
     ob1 = numerical_treatment(df)
     b=ob1.num_df()
     ob2 = categorical_imputation(b)
     a = ob2.cat_df()
-    print(a)
-    #a.to_csv(input('Enter the name of the cleaned dataset to be saved:'))
-    #print("completed")
+    #print(a)
+    a.to_csv(input('Enter the name of the cleaned dataset to be saved:'))
+    print("completed")
 
 
