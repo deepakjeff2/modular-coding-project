@@ -135,6 +135,6 @@ if __name__=='__main__':
     ob2 = categorical_imputation(b)
     a = ob2.cat_df()
     a.to_csv(input('Enter the name of the cleaned dataset to be saved:'))
-    print("completed")
+    
 
 
